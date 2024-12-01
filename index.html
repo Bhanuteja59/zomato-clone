@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- header -->
+    <div class="header row ">
+      
+      <div class="logo col-lg-4 col-md-3 col-sm-3 ">
+        <a href="# "> <img src="https://www.giverefer.com/thumbnails/1680420135.png" >  </a>
+      </div>
+      
+      <div class="search col-4 col-g-1 col-sm-2 col-md-3">
+        <div class="d-flex gap-2">
+  <input type="text" class="form-control" placeholder="Search Recipe" >
+  <button class="btn btn-secondary" >
+    <span class="material-symbols-outlined"> search </span>
+  </button>
+</div>
+      </div> 
+      <div class="button-group col-4 d-flex gap-1 col-sm-2 col-md-3">
+        <div class="login">
+          <button class="btn btn2 Login" > Login  </button>
+        </div>
+        <div class="sign-up">
+          <button class="btn btn2 SignUp"  > signUp  </button>
+        </div>
+      </div>
+
+      <form action="#">
+      <div class="login_clicked ">
+        <h3>Login</h3>
+        <div class="form-group ">
+            <label for="login-username">Username</label>
+            <input type="text" class="form-control username" id="login-username" placeholder="Username" required>
+        </div><br> 
+        <div class="form-group ">
+            <label for="login-password">Password</label>
+            <input type="password" class="form-control password" id="login-password" placeholder="Password" required />
+        </div><br>
+        <button type="submit" class="btn btn-primary login-submit col">Submit</button>
+        <br>
+    </div>
+    </form>
+    <form action="#" >
+    <div class="signup_clicked">
+        <h3>Sign-Up</h3>
+        <div class="form-group">
+            <label for="signup-username">Username</label>
+            <input type="text" class="form-control" id="signup-username" placeholder="Username" required>
+        </div><br>
+        <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="email" class="form-control" id="signup-email" placeholder="Email" required>
+        </div><br>
+        <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" class="form-control" id="signup-password" placeholder="Password" required>
+        </div><br>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" required>
+        </div><br>
+        <button type="submit" class="btn btn-primary signUp-submit">Submit</button>
+        <br>
+    </div>
+    </form>
+      
+    </div>
+    <br><hr>
+    
+    <!-- life -->
+    <div class="life row gap-3">
+      <div class=" col-2">
+        <img class="life-1" src="https://b.zmtcdn.com/data/o2_assets/246bbd71fbba420d5996452be3024d351616150055.png?output-format=webp" >
+        <h3> Delivary </h3>
+      </div>
+      <div class=" col-2">
+        <img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png?output-format=webp" class="life-2">
+        <h3> Dining Out </h3>
+      </div>
+      <div class=" col-2">
+        <img class="life-3" src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp" >
+        <h3> Night Life </h3>
+      </div>
+      
+    </div>
+    <br><hr>
+
+    <!-- rating -->
+    <div class="rating-items row gap-2">
+      <h3> Rating </h3>
+      <div class="rating  col-1">
+        <span class="material-symbols-outlined" > star </span> 
+        <p>rating  </p>
+      </div>
+      <div class="rating col-1">
+        <span class="material-symbols-outlined"> filter_alt </span> 
+        <p> filter </p>
+      </div>
+      <div class="rating col-1">
+        <span class="material-symbols-outlined"> menu_book </span>
+        <p> Menu </p>
+      </div>
+            <div class="rating  col-1">
+        <span class="material-symbols-outlined"> local_bar </span>
+            <p>  Local bar </p>
+      </div>
+    </div>
+    <br><hr>
+    
+    <!-- inspiration for your first orders -->
+<div class="orders row">
+    <h3>Inspiration for your first order</h3>
+     <br><br><br>
+    <div id="carouselOrders" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row gap-3">
+                    <div class="col-3 image"> <a href="https://www.zomato.com/kurnool/restaurants/biryani" target="_blank" rel="noopener noreferrer">
+                        <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" class="d-block" alt="Image 1" title="Chicken Biriyani">
+                      </a></div>
+                    <div class="col-3 image"><a href="https://www.zomato.com/kurnool/delivery/dish-pizza" target="_blank" rel="noopener noreferrer">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" class="d-block" alt="Image 2" title="Pizza">
+                      </a></div>
+                    <div class="col-3 image"><a href="https://www.zomato.com/kurnool/delivery?dishv2_id=39404&category=1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" class="d-block" alt="Image 3" title="Leg pieces">
+                      </a></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row gap-3">
+                    <div class="col-3 image"> <a href="https://www.zomato.com/kurnool/delivery/dish-burger" target="_blank" rel="noopener noreferrer">
+                        <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" class="d-block" alt="Image 4" title="Burger">
+                    </a> </div>
+                    <div class="col-3 image"><a href="https://www.zomato.com/kurnool/delivery?dishv2_id=60411&category=1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" class="d-block" alt="Image 5" title="Chapathi melas">
+                      </a></div>
+                    <div class="col-3">
+                      
+                    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev btn btn-secondary btn-forward-1 position-absolute top-15 start-0 translate-middle-y" type="button" data-bs-target="#carouselOrders" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn btn-secondary btn-previous-1 position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carouselOrders" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<hr><br>
+
+<!-- Top brands for you section -->
+<div class="top-brands row">
+    <h3>Top brands for you</h3>
+     <br>
+    <div id="carouselBrands" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-3 image">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/ec72c289aa01d947fe15a009ce8e559f_1616052816.png?output-format=webp" class="d-block" alt="Image 1">
+                    </div>
+                    <div class="col-3 image">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/7a7904eff687a7456599074a4e7d2335_1617875100.png?output-format=webp" class="d-block" alt="Image 2">
+                    </div>
+                    <div class="col-3 image">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/1a985408ca7ad8fd097f2c47db9c5cb6_1611252598.png?output-format=webp" class="d-block" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-3 image">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/239f872f52291fe253a37cc8dd16188f_1663838300.png?output-format=webp" class="d-block" alt="Image 4">
+                    </div>
+                    <div class="col-3 image">
+                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/80c09d718acddee05a655eb378bb442f_1617875125.png?output-format=webp" class="d-block" alt="Image 5">
+                    </div>
+                    <div class="col-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev btn btn-secondary btn-forward-2 position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carouselBrands" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn btn-secondary btn-previous-2 position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carouselBrands" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+    <br><hr>
+    <!-- delivary-->
+    
+    <div class="delivery row text-center">
+      <h3 class="text-start">Delivery Restaurants in Bengaluru</h3>
+      <br>
+    
+      <div class="items col-4">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/3/53923/f1ed8209bf84106c577ebd774dd7194b_o2_featured_v2.jpg?output-format=webp" alt="Corner Icecreams">
+        <a href="https://www.zomato.com/bangalore/corner-icecreams" target="_blank">
+          <h5>Corner Icecreams</h5>
+        </a>
+      </div>
+    
+      <div class="items col-4">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/1/50471/6fa39637442e85efb64a5c0db7b31b7f_o2_featured_v2.jpg?output-format=webp" alt="Empire Restaurant">
+        <a href="https://www.zomato.com/bangalore/empire-restaurant" target="_blank"> 
+          <h5>Empire Restaurant</h5>
+        </a>
+      </div>
+    
+      <div class="items col-4">
+        <img src="https://b.zmtcdn.com/data/pictures/8/20009998/5e2e1f1be6f447f426345180ae1d3792_o2_featured_v2.jpg?output-format=webp" alt="Big Chow">
+        <a href="https://www.zomato.com/bangalore/big-chow" target="_blank"> 
+          <h5>Big Chow</h5>
+        </a>
+      </div>
+    
+      <div class="items col-4">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/9/51039/e3e149c669fa5d2e3f57221a2c394697_o2_featured_v2.jpg?output-format=webp" alt="Truffles">
+        <a href="https://www.zomato.com/bangalore/truffles" target="_blank"> 
+          <h5>Truffles</h5>
+        </a>
+      </div>
+    
+      <div class="items col-4">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/2/50502/7a0aa9db2460a1da9d8dd346ad732c4e_o2_featured_v2.jpg?output-format=webp" alt="Imperial Restaurant">
+        <a href="https://www.zomato.com/bangalore/imperial-restaurant" target="_blank"> 
+          <h5>Imperial Restaurant</h5>
+        </a>
+      </div>
+    
+      <div class="items col-4">
+        <img src="https://b.zmtcdn.com/data/pictures/7/20339197/c8217c87b770bb728fc35cc44fc9743a_o2_featured_v2.jpg?output-format=webp" alt="Protein Chef">
+        <a href="https://www.zomato.com/bangalore/protein-chef" target="_blank"> 
+          <h5>Protein Chef</h5>
+        </a>
+      </div>
+    </div>
+    
+    <br><hr>
+    
+    <!--footer -->
+    <div class="footer">
+    
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i> ZOMATO
+          </h6>
+          <p>
+            The platform enables users to browse restaurant menus, read customer reviews, and order food for delivery or takeaway.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+<!--         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <div style="text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 16px; color: #074739;">Contact Developer</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">
+            <a href="https://www.linkedin.com/in/reddy-bhanuteja-160bb4184/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border: 0; width: 36px; height: 36px; padding: 2px; margin: 5px; color: #11CBE9; border-radius: 35%; background-color: #074739;">
+              <svg class="niftybutton-linkedin" style="display: block; fill: currentColor" data-donate="true" data-tag="lin" data-name="LinkedIn" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                <title>LinkedIn</title>
+                <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
+              </svg>
+            </a>
+            <a href="mailto:bhanutejareddy59@gmail.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border: 0; width: 36px; height: 36px; padding: 2px; margin: 5px; color: #11CBE9; border-radius: 35%; background-color: #074739;">
+              <svg class="niftybutton-email" style="display: block; fill: currentColor" data-donate="true" data-tag="ema" data-name="Email" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                <title>Email</title>
+                <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/Bhanuteja59" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border: 0; width: 36px; height: 36px; padding: 2px; margin: 5px; color: #11CBE9; border-radius: 35%; background-color: #074739;">
+              <svg class="niftybutton-github" style="display: block; fill: currentColor" data-donate="true" data-tag="git" data-name="Github" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                <title>Github</title>
+                <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
+              </svg>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<br>
+      
+    </div>
+  </div>
+</body>
+</html>
