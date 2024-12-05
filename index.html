@@ -13,24 +13,27 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
+  <div class="container main ">
     
-    <!-- header -->
-    <div class="header row ">
+    <div class="header row align-items-center g-3">
+  <!-- Logo Section -->
+  <div class="logo col-12 col-md-2 text-center text-md-start">
+    <a href="#">
+      <img src="https://www.giverefer.com/thumbnails/1680420135.png" class="img-fluid" alt="Logo">
+    </a>
+  </div>
       
-      <div class="logo col-lg-4 col-md-3 col-sm-3 ">
-        <a href="# "> <img src="https://www.giverefer.com/thumbnails/1680420135.png" >  </a>
-      </div>
-      
-      <div class="search col-4 col-g-1 col-sm-2 col-md-3">
-        <div class="d-flex gap-2">
-  <input type="text" class="form-control" placeholder="Search Recipe" >
-  <button class="btn btn-secondary" >
-    <span class="material-symbols-outlined"> search </span>
-  </button>
-</div>
-      </div> 
-      <div class="button-group col-4 d-flex gap-1 col-sm-2 col-md-3">
+  <!-- Search Bar Section -->
+  <div class="search col-12 col-md-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search Recipe">
+      <button class="btn btn-secondary" type="button">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+    </div>
+  </div>
+
+      <div class="button-group d-flex col justify-content-center gap-2">
         <div class="login">
           <button class="btn btn2 Login" > Login  </button>
         </div>
@@ -77,189 +80,274 @@
         <br>
     </div>
     </form>
-      
     </div>
-    <br><hr>
+    
+  <hr>
     
     <!-- life -->
-    <div class="life row gap-3">
-      <div class=" col-2">
-        <img class="life-1" src="https://b.zmtcdn.com/data/o2_assets/246bbd71fbba420d5996452be3024d351616150055.png?output-format=webp" >
-        <h3> Delivary </h3>
+    <div class="life row p-1 gap-3">
+      <h3> Services Provide  </h3>
+      <div class="col-3 ">
+        <img class="life-1" src="https://b.zmtcdn.com/data/o2_assets/246bbd71fbba420d5996452be3024d351616150055.png?output-format=webp" ><br><br>
+        <button class="btn btn-secondary delivary"> Delivary In</button>
       </div>
-      <div class=" col-2">
-        <img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png?output-format=webp" class="life-2">
-        <h3> Dining Out </h3>
+      <div class="col-3">
+        <img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png?output-format=webp" class="life-2"><br><br>
+        <button class="btn btn-secondary dining_out"> Dining Out </button>
       </div>
-      <div class=" col-2">
-        <img class="life-3" src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp" >
-        <h3> Night Life </h3>
+      <div class="col-3">
+        <img class="life-3" src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp" ><br><br>
+        <button class="btn btn-secondary night_life"> Night Life </button>
       </div>
       
     </div>
     <br><hr>
 
     <!-- rating -->
-    <div class="rating-items row gap-2">
-      <h3> Rating </h3>
-      <div class="rating  col-1">
-        <span class="material-symbols-outlined" > star </span> 
+    <div class="rating-items row gap-2 p-3">
+      <h3> Rating </h3> 
+      <div class="rating col-lg-1 col-md-2 col">
+        <span class="material-symbols-outlined"> star </span> 
         <p>rating  </p>
       </div>
-      <div class="rating col-1">
+      <div class="rating col-lg-1 col-md-2 col">
         <span class="material-symbols-outlined"> filter_alt </span> 
         <p> filter </p>
       </div>
-      <div class="rating col-1">
+      <div class="rating col-lg-1 col-md-2 col">
         <span class="material-symbols-outlined"> menu_book </span>
         <p> Menu </p>
       </div>
-            <div class="rating  col-1">
+            <div class="rating col-lg-1 col-md-2  col">
         <span class="material-symbols-outlined"> local_bar </span>
             <p>  Local bar </p>
       </div>
     </div>
     <br><hr>
+
+<!-- Inspiration for Orders Section -->
+<div class="orders container mb-5">
+  <h3 class="text-center mb-4">Inspiration for Your First Order</h3>
+  <div id="carouselOrders" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div class="row justify-content-center text-center">
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" 
+                           class="img-fluid rounded-circle" 
+                           alt="Chicken Biriyani" 
+                           title="Chicken Biriyani">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" 
+                           class="img-fluid rounded-circle" 
+                           alt="Pizza" 
+                           title="Pizza">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" 
+                           class="img-fluid rounded-circle" 
+                           alt="Leg Pieces" 
+                           title="Leg Pieces">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <div class="row justify-content-center text-center">
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" 
+                           class="img-fluid rounded-circle" 
+                           alt="Burger" 
+                           title="Burger">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" 
+                           class="img-fluid rounded-circle" 
+                           alt="Chapathi Melas" 
+                           title="Chapathi Melas">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+      <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carouselOrders" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carouselOrders" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</div>
+
+<hr class="my-5">
+
+<!-- Top Brands Section -->
+<div class="top-brands container mb-5">
+  <h3 class="text-center mb-4">Top Brands for You</h3>
+  <div id="carouselBrands" class="carousel slide" data-bs-ride="carousel">
     
-    <!-- inspiration for your first orders -->
-<div class="orders row">
-    <h3>Inspiration for your first order</h3>
-     <br><br><br>
-    <div id="carouselOrders" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row gap-3">
-                    <div class="col-3 image"> <a href="https://www.zomato.com/kurnool/restaurants/biryani" target="_blank" rel="noopener noreferrer">
-                        <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" class="d-block" alt="Image 1" title="Chicken Biriyani">
-                      </a></div>
-                    <div class="col-3 image"><a href="https://www.zomato.com/kurnool/delivery/dish-pizza" target="_blank" rel="noopener noreferrer">
-                        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" class="d-block" alt="Image 2" title="Pizza">
-                      </a></div>
-                    <div class="col-3 image"><a href="https://www.zomato.com/kurnool/delivery?dishv2_id=39404&category=1" target="_blank" rel="noopener noreferrer">
-                        <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" class="d-block" alt="Image 3" title="Leg pieces">
-                      </a></div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="row gap-3">
-                    <div class="col-3 image"> <a href="https://www.zomato.com/kurnool/delivery/dish-burger" target="_blank" rel="noopener noreferrer">
-                        <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" class="d-block" alt="Image 4" title="Burger">
-                    </a> </div>
-                    <div class="col-3 image"><a href="https://www.zomato.com/kurnool/delivery?dishv2_id=60411&category=1" target="_blank" rel="noopener noreferrer">
-                        <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" class="d-block" alt="Image 5" title="Chapathi melas">
-                      </a></div>
-                    <div class="col-3">
-                      
-                    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev btn btn-secondary btn-forward-1 position-absolute top-15 start-0 translate-middle-y" type="button" data-bs-target="#carouselOrders" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next btn btn-secondary btn-previous-1 position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carouselOrders" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+
+    <div class="carousel-inner">
+      <!-- First Carousel Item -->
+      <div class="carousel-item active">
+          <div class="row justify-content-center text-center">
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/0e6f4a6a6d54c88d548abaa04a0227bc_1625164827.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="McDonald's" 
+                           title="McDonald's">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/15684bb89b72d7d4ef9dc57aa64fb42f_1728977201.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="La Pino'z Pizza" 
+                           title="La Pino'z Pizza">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/1a985408ca7ad8fd097f2c47db9c5cb6_1611252779.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="Domino's Pizza" 
+                           title="Domino's Pizza">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Second Carousel Item -->
+      <div class="carousel-item">
+          <div class="row justify-content-center text-center">
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/a6927d83d9185b7788814049b4a9fc8c_1726603431.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="Burger King" 
+                           title="Burger King">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/9302c59eca94abbee01aec9acf9305f6_1676520651.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="Subway" 
+                           title="Subway">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/f1dc700c8be881b9a17be904971a0644_1726678288.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="KFC" 
+                           title="KFC">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Additional Carousel Items -->
+      <div class="carousel-item">
+          <div class="row justify-content-center text-center">
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/9c390005a3b36e2f209b5868d536973f_1639679267.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="Meraki" 
+                           title="Meraki">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/84edd5489389f21069c09f0c88ea8abb_1628179319.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="Theobroma" 
+                           title="Theobroma">
+                  </div>
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+                  <div class="brand-item">
+                      <img src="https://b.zmtcdn.com/data/brand_creatives/logos/de403d96ef7b0ca2dd78244b77b499861722519346.png?output-format=webp" 
+                           class="img-fluid rounded-circle" 
+                           alt="Natural Ice Cream" 
+                           title="Natural Ice Cream">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+  
+
+      <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carouselBrands" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carouselBrands" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
 </div>
+<br><hr>
 
-<hr><br>
-
-<!-- Top brands for you section -->
-<div class="top-brands row">
-    <h3>Top brands for you</h3>
-     <br>
-    <div id="carouselBrands" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-3 image">
-                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/ec72c289aa01d947fe15a009ce8e559f_1616052816.png?output-format=webp" class="d-block" alt="Image 1">
-                    </div>
-                    <div class="col-3 image">
-                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/7a7904eff687a7456599074a4e7d2335_1617875100.png?output-format=webp" class="d-block" alt="Image 2">
-                    </div>
-                    <div class="col-3 image">
-                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/1a985408ca7ad8fd097f2c47db9c5cb6_1611252598.png?output-format=webp" class="d-block" alt="Image 3">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second Slide -->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-3 image">
-                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/239f872f52291fe253a37cc8dd16188f_1663838300.png?output-format=webp" class="d-block" alt="Image 4">
-                    </div>
-                    <div class="col-3 image">
-                        <img src="https://b.zmtcdn.com/data/brand_creatives/logos/80c09d718acddee05a655eb378bb442f_1617875125.png?output-format=webp" class="d-block" alt="Image 5">
-                    </div>
-                    <div class="col-3">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <button class="carousel-control-prev btn btn-secondary btn-forward-2 position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#carouselBrands" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next btn btn-secondary btn-previous-2 position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#carouselBrands" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-
-    <br><hr>
-    <!-- delivary-->
+<!-- delivary -->
     
     <div class="delivery row text-center">
       <h3 class="text-start">Delivery Restaurants in Bengaluru</h3>
-      <br>
-    
-      <div class="items col-4">
+      <br><br>
+ 
+      <div class="items col-md-4 col-sm-6 "> 
+        <a href="https://www.zomato.com/bangalore/lavelle-road-restaurants?dishv2_id=58693&category=1&delivery_subzone=3655&place_name=ST+Joseph+Indian+Composite+PU+College%2C++Vittal+Mallya+Road%2C+D%27+Souza+Layout" target="_blank">
         <img src="https://b.zmtcdn.com/data/pictures/chains/3/53923/f1ed8209bf84106c577ebd774dd7194b_o2_featured_v2.jpg?output-format=webp" alt="Corner Icecreams">
-        <a href="https://www.zomato.com/bangalore/corner-icecreams" target="_blank">
-          <h5>Corner Icecreams</h5>
+        <h5>Corner Icecreams</h5>
         </a>
       </div>
     
-      <div class="items col-4">
+      <div class="items col-md-4 col-sm-6">
+        <a href="https://www.zomato.com/bangalore/empire-restaurant-majestic/order" target="_blank">
         <img src="https://b.zmtcdn.com/data/pictures/chains/1/50471/6fa39637442e85efb64a5c0db7b31b7f_o2_featured_v2.jpg?output-format=webp" alt="Empire Restaurant">
-        <a href="https://www.zomato.com/bangalore/empire-restaurant" target="_blank"> 
-          <h5>Empire Restaurant</h5>
+         <h5>Empire Restaurant</h5>
         </a>
       </div>
     
-      <div class="items col-4">
+      <div class="items col-md-4 col-sm-6">
+        <a href="https://www.zomato.com/bangalore/big-chow-2-domlur-bangalore/order" target="_blank"> 
         <img src="https://b.zmtcdn.com/data/pictures/8/20009998/5e2e1f1be6f447f426345180ae1d3792_o2_featured_v2.jpg?output-format=webp" alt="Big Chow">
-        <a href="https://www.zomato.com/bangalore/big-chow" target="_blank"> 
-          <h5>Big Chow</h5>
+        <h5>Big Chow</h5>
         </a>
       </div>
     
-      <div class="items col-4">
+      <div class="items col-md-4 col-sm-6" >
+        <a href="https://www.zomato.com/bangalore/delivery?point_of_interest=118368&dishv2_id=26737&category=1" target="_blank"> 
         <img src="https://b.zmtcdn.com/data/pictures/chains/9/51039/e3e149c669fa5d2e3f57221a2c394697_o2_featured_v2.jpg?output-format=webp" alt="Truffles">
-        <a href="https://www.zomato.com/bangalore/truffles" target="_blank"> 
           <h5>Truffles</h5>
         </a>
       </div>
     
-      <div class="items col-4">
+      <div class="items col-md-4 col-sm-6">
+        <a href="https://www.zomato.com/bangalore/imperial-restaurant-since-1954-vasanth-nagar-bangalore/order" target="_blank"> 
         <img src="https://b.zmtcdn.com/data/pictures/chains/2/50502/7a0aa9db2460a1da9d8dd346ad732c4e_o2_featured_v2.jpg?output-format=webp" alt="Imperial Restaurant">
-        <a href="https://www.zomato.com/bangalore/imperial-restaurant" target="_blank"> 
-          <h5>Imperial Restaurant</h5>
+         <h5>Imperial Restaurant</h5>
         </a>
       </div>
     
-      <div class="items col-4">
+      <div class="items col-md-4 col-sm-6 ">
+        <a href="https://www.zomato.com/bangalore/protein-chef-shanti-nagar-bangalore/order" target="_blank"> 
         <img src="https://b.zmtcdn.com/data/pictures/7/20339197/c8217c87b770bb728fc35cc44fc9743a_o2_featured_v2.jpg?output-format=webp" alt="Protein Chef">
-        <a href="https://www.zomato.com/bangalore/protein-chef" target="_blank"> 
-          <h5>Protein Chef</h5>
+         <h5>Protein Chef</h5>
         </a>
       </div>
     </div>
@@ -270,7 +358,6 @@
     <div class="footer">
     
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <div class="me-5 d-none d-lg-block">
       <span>Get connected with us on social networks:</span>
@@ -302,12 +389,8 @@
     <div class="container text-center text-md-start mt-5">
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i> ZOMATO
-          </h6>
-          <p>
-            The platform enables users to browse restaurant menus, read customer reviews, and order food for delivery or takeaway.
-          </p>
+          <h6 class="text-uppercase fw-bold mb-4">  <i class="fas fa-gem me-3"></i> ZOMATO </h6>
+          <p> The platform enables users to browse restaurant menus, read customer reviews, and order food for delivery or takeaway. </p>
         </div>
         <!-- Grid column -->
 
@@ -386,5 +469,24 @@
       
     </div>
   </div>
+
+      <!-- next pages  -->
+     <div class="pages">
+       <div class="delivary_page">
+        <h2> This is a sample delivary page <h2>
+          <button class="btn btn-primary pageOut"> Page out </button>
+      </div>
+          
+          <div class="dining_out_page">
+        <h2> This is a sample dining page <h2>
+            <button class="btn btn-primary pageOut2"> Page out </button>
+      </div>
+          
+          <div class="night_life_page">
+        <h2> This is a sample night page <h2>
+          <button class="btn btn-primary pageOut3"> Page out </button>
+      </div>
+     </div>
+
 </body>
 </html>
