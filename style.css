@@ -46,7 +46,13 @@ footer {
   display: none;
   animation: myAnim 2s ease 0s 1 normal forwards;
   box-shadow: 0px 1px 24px 0px #000000;
-  padding: 2%;
+  padding: 3%;
+  background: rgba( 255, 255, 255, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 16.5px );
+-webkit-backdrop-filter: blur( 16.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 @keyframes myAnim {
@@ -72,6 +78,12 @@ footer {
   width: 100px;
   height: 100px;
   cursor: pointer;
+}
+.life button{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+  left:10px;
 }
 
 .life-1:hover, .life-2:hover, .life-3:hover {
@@ -162,4 +174,57 @@ h3 {
 
 .items:hover::before {
   opacity: 1;
+}
+
+.pages{
+  display: none;
+}
+
+.delivary_page{
+  display: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:25%;
+  padding:5%;
+  box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+-webkit-box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+-moz-box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+}
+
+.night_life_page{
+  display: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    margin:25%;
+  padding:5%;
+  box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+-webkit-box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+-moz-box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+}
+
+.dining_out_page{
+  display: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    margin:25%;
+  padding:5%;
+  box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+-webkit-box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+-moz-box-shadow: -2px 1px 50px 3px rgba(0,0,0,0.83);
+}
+
+.brand-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
